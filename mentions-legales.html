@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentions Légales - 2oVus</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --gradient-start: #C41E5C;
+            --gradient-end: #5DABA8;
+            --bg-dark: #121620;
+            --surface-dark: #1A1F2E;
+            --text-light: #FFFBFE;
+            --text-muted: rgba(255, 251, 254, 0.7);
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            line-height: 1.8;
+        }
+        header {
+            padding: 20px 24px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+        header a {
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        header img { width: 36px; height: 36px; border-radius: 8px; }
+        .logo-text {
+            font-size: 22px;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px 24px;
+        }
+        h1 {
+            font-size: 36px;
+            font-weight: 800;
+            margin-bottom: 40px;
+        }
+        h2 { font-size: 22px; font-weight: 700; margin-top: 40px; margin-bottom: 16px; color: var(--gradient-start); }
+        p { color: var(--text-muted); margin-bottom: 12px; font-size: 15px; }
+        a.inline-link { color: var(--gradient-start); text-decoration: none; }
+        a.inline-link:hover { text-decoration: underline; }
+        .back-link { display: inline-block; margin-top: 40px; color: var(--gradient-start); text-decoration: none; font-weight: 600; }
+        .back-link:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="assets/logo.png" alt="2oVus">
+            <span class="logo-text">2oVus</span>
+        </a>
+    </header>
+    <div class="content">
+        <h1>Mentions Légales</h1>
+
+        <h2>Éditeur du site</h2>
+        <p><strong>Raison sociale :</strong> NOproBS</p>
+        <p><strong>Forme juridique :</strong> SASU (Société par Actions Simplifiée Unipersonnelle)</p>
+        <p><strong>Capital social :</strong> 1 000 euros</p>
+        <p><strong>RCS Paris :</strong> 984 241 075</p>
+        <p><strong>Siège social :</strong> Paris, France</p>
+        <p><strong>Email :</strong> <a href="mailto:contact@2ovus.com" class="inline-link">contact@2ovus.com</a></p>
+
+        <h2>Directeur de la publication</h2>
+        <p>Le directeur de la publication est le représentant légal de la société NOproBS.</p>
+
+        <h2>Hébergement</h2>
+        <p>Le site est hébergé par :</p>
+        <p><strong>MAMP / Serveur dédié</strong></p>
+
+        <h2>Propriété intellectuelle</h2>
+        <p>L'ensemble du contenu du site 2ovus.com (textes, images, graphismes, logo, icones, sons, logiciels) est la propriété exclusive de NOproBS, sauf mention contraire. Toute reproduction, représentation, modification, publication, adaptation de tout ou partie des éléments du site est interdite sans autorisation écrite préalable.</p>
+
+        <h2>Données personnelles</h2>
+        <p>Pour toute information relative a la collecte et au traitement de vos données personnelles, veuillez consulter notre <a href="privacy.html" class="inline-link">Politique de Confidentialité</a>.</p>
+
+        <h2>Cookies</h2>
+        <p>Le site peut utiliser des cookies techniques nécessaires à son bon fonctionnement. Aucun cookie publicitaire ou de tracking n'est utilisé sans consentement préalable.</p>
+
+        <h2>Droit applicable</h2>
+        <p>Les présentes mentions légales sont soumises au droit français. En cas de litige, les tribunaux français seront compétents.</p>
+
+        <a href="index.html" class="back-link">&larr; Retour à l'accueil</a>
+    </div>
+
+    <!-- Mixpanel Analytics -->
+    <script src="assets/analytics.js"></script>
+</body>
+</html>
