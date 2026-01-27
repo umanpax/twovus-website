@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registre des traitements - 2oVus</title>
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --gradient-start: #C41E5C;
+            --gradient-end: #5DABA8;
+            --bg-dark: #121620;
+            --surface-dark: #1A1F2E;
+            --text-light: #FFFBFE;
+            --text-muted: rgba(255, 251, 254, 0.7);
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            line-height: 1.8;
+        }
+        header {
+            padding: 20px 24px;
+            display: flex;
+            align-items: center;
+            gap: 0;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+        header a {
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0;
+        }
+        header img:first-child { width: 96px; height: 96px; border-radius: 12px; }
+        .logo-text {
+            height: 125px;
+            width: auto;
+            margin-left: -55px;
+            
+            
+            
+        }
+        .content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 24px;
+        }
+        h1 {
+            font-size: 36px;
+            width: auto;
+            margin-bottom: 8px;
+        }
+        .subtitle { color: var(--text-muted); margin-bottom: 8px; font-size: 14px; font-style: italic; }
+        .date { color: var(--text-muted); margin-bottom: 40px; font-size: 14px; }
+        h2 { height: 125px; font-weight: 700; margin-top: 40px; margin-bottom: 16px; color: var(--gradient-start); }
+        h3 { font-size: 18px; font-weight: 600; margin-top: 32px; margin-bottom: 16px; color: var(--text-light); border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; }
+        p, li { color: var(--text-muted); margin-bottom: 12px; font-size: 15px; }
+        ul { padding-left: 24px; margin-bottom: 16px; }
+        li { margin-bottom: 8px; }
+        a.inline-link { color: var(--gradient-start); text-decoration: none; }
+        a.inline-link:hover { text-decoration: underline; }
+        .back-link { display: inline-block; margin-top: 40px; color: var(--gradient-start); text-decoration: none; font-weight: 600; }
+        .back-link:hover { text-decoration: underline; }
+        strong { color: var(--text-light); }
+        .treatment-card {
+            background: var(--surface-dark);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 24px;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+        .treatment-card h4 {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--gradient-start);
+            margin-bottom: 16px;
+        }
+        .treatment-item {
+            display: flex;
+            margin-bottom: 8px;
+        }
+        .treatment-label {
+            color: var(--text-light);
+            font-weight: 500;
+            min-width: 180px;
+            font-size: 14px;
+        }
+        .treatment-value {
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="assets/logo.png" alt="2oVus Logo">
+            <img src="assets/2oVus.svg" alt="2oVus" class="logo-text">
+        </a>
+    </header>
+    <div class="content">
+        <h1>Registre des traitements</h1>
+        <p class="subtitle">Conformément à l'article 30 du RGPD</p>
+        <p class="date">Dernière mise à jour : 23/01/2026</p>
+
+        <h2>1. Responsable du traitement</h2>
+        <ul>
+            <li><strong>Responsable du traitement</strong> : NOproBS</li>
+            <li><strong>Forme juridique</strong> : SASU</li>
+            <li><strong>RCS</strong> : Paris 984 241 075</li>
+            <li><strong>Adresse</strong> : Paris</li>
+            <li><strong>Contact</strong> : <a href="mailto:contact@2ovus.com" class="inline-link">contact@2ovus.com</a></li>
+            <li><strong>DPO</strong> : non désigné (taille et nature de la structure)</li>
+        </ul>
+
+        <h2>2. Description générale du service</h2>
+        <p>2oVus est une application permettant à des personnes majeures, seules ou en couple, de découvrir et d'explorer leurs envies relationnelles et intimes, à travers des questionnaires, interactions et contenus personnalisés.</p>
+        <p>Le service implique le traitement de données personnelles, y compris de <strong>données sensibles relatives à la vie affective et intime</strong>.</p>
+
+        <h2>3. Registre des traitements</h2>
+
+        <div class="treatment-card">
+            <h4>Traitement n°1 — Création et gestion du compte utilisateur</h4>
+            <div class="treatment-item">
+                <span class="treatment-label">Finalité :</span>
+                <span class="treatment-value">Création, authentification et gestion du compte utilisateur</span>
+            </div>
+            <div class="treatment-item">
+                <span class="treatment-label">Personnes concernées :</span>
+                <span class="treatment-value">Utilisateurs majeurs du service</span>
+            </div>
+            <div class="treatment-item">
+                <span class="treatment-label">Catégories de données :</span>
+                <span class="treatment-value">Adresse e-mail, identifiant utilisateur, données de connexion, préférences de langue</span>
+            </div>
+            <div class="treatment-item">
+                <span class="treatment-label">Base légale :</span>
+                <span class="treatment-value">Exécution du contrat (CGU)</span>
+            </div>
+            <div class="treatment-item">
+                <span class="treatment-label">Durée de conservation :</span>
+                <span class="treatment-value">Pendant la durée de vie du compte + 12 mois après suppression</span>
+            </div>
+            <div class="treatment-item">
+                <span class="treatment-label">Destinataires :</span>
+                <span class="treatment-value">Équipe interne habilitée, prestataires techniques (hébergement)</span>
+            </div>
+            <div class="treatment-item">
+                <span class="treatment-label">Transferts hors UE :</span>
+                <span class="treatment-value">Aucun</span>
+            </div>
+            <div class="treatment-item">
+                <span class="treatment-label">Mesures de sécurité :</span>
+                <span class="treatment-value">Chiffrement, contrôle d'accès, journalisation</span>
+            </div>
+        </div>
+
+        <div class="treatment-card">
+            <h4>Traitement n°2 — Fourniture du service et exploration des envies</h4>
+            <div class="treatment-item">
+                <span class="treatment-label">Finalité :</span>
+                <span class="treatment-value">Fournir les fonctionnalités de découverte et d'exploration des envies relationnelles et intimes</span>
+            </div>
+            <div class="treatment-item">
+                <span class="treatment-label">Personnes concernées :</span>
+                <span class="treatment-value">Utilisateurs du service</span>
+            </div>
+            <div class="treatment-item">
+                <span class="treatment-label">Catégories de données :</span>
+                <span class="treatment-value">Réponses aux questionnaires, interactions utilisateur, données relatives à la vie affective et intime (données sensibles)</span>
+            </div>
+            <div class="treatment-item">
+                <span class="treatment-label">Base légale :</span>
+                <span class="treatment-value">Consentement explicite (article 9 RGPD)</span>
+            </div>
+            <div class="treatment-item">
+                <span class="treatment-label">Durée de conservation :</span>
+                <span class="treatment-value">Pendant la durée de vie du compte, suppression immédiate sur demande</span>
+            </div>
+            <div class="treatment-item">
+                <span class="treatment-label">Destinataires :</span>
+                <span class="treatment-value">Accès interne strictement limité</span>
+            </div>
+            <div class="treatment-item">
+                <span class="treatment-label">Transferts hors UE :</span>
+                <span class="treatment-value">Aucun</span>
+            </div>
+            <div class="treatment-item">
+                <span class="treatment-label">Mesures de sécurité :</span>
+                <span class="treatment-value">Chiffrement renforcé, cloisonnement logique, habilitations restreintes</span>
+            </div>
+        </div>
+
+        <div class="treatment-card">
+            <h4>Traitement n°3 — Analyse et amélioration du service (anonymisation)</h4>
+            <div class="treatment-item">
+                <span class="treatment-label">Finalité :</span>
+                <span class="treatment-value">Analyse statistique et amélioration des fonctionnalités du service</span>
+            </div>
+            <div class="treatment-item">
+                <span class="treatment-label">Personnes concernées :</span>
+                <span class="treatment-value">Utilisateurs ayant donné leur consentement facultatif</span>
+            </div>
+            <div class="treatment-item">
+                <span class="treatment-label">Catégories de données :</span>
+                <span class="treatment-value">Données d'usage et, le cas échéant, données sensibles après anonymisation irréversible</span>
+            </div>
+            <div class="treatment-item">
+                <span class="treatment-label">Base légale :</span>
+                <span class="treatment-value">Consentement explicite et distinct</span>
+            </div>
+            <div class="treatment-item">
+                <span class="treatment-label">Durée de conservation :</span>
+                <span class="treatment-value">Données anonymisées conservées sans limitation de durée</span>
+            </div>
+            <div class="treatment-item">
+                <span class="treatment-label">Destinataires :</span>
+                <span class="treatment-value">Équipe interne (produit / technique)</span>
+            </div>
+            <div class="treatment-item">
+                <span class="treatment-label">Transferts hors UE :</span>
+                <span class="treatment-value">Aucun</span>
+            </div>
+            <div class="treatment-item">
+                <span class="treatment-label">Mesures de sécurité :</span>
+                <span class="treatment-value">Procédures d'anonymisation documentées, tests de non-réidentification</span>
+            </div>
+        </div>
+
+        <div class="treatment-card">
+            <h4>Traitement n°4 — Sécurité, prévention des abus et incidents</h4>
+            <div class="treatment-item">
+                <span class="treatment-label">Finalité :</span>
+                <span class="treatment-value">Sécurité du service, détection des abus, prévention des fraudes</span>
+            </div>
+            <div class="treatment-item">
+                <span class="treatment-label">Personnes concernées :</span>
+                <span class="treatment-value">Utilisateurs du service</span>
+            </div>
+            <div class="treatment-item">
+                <span class="treatment-label">Catégories de données :</span>
+                <span class="treatment-value">Journaux de connexion, données techniques, événements de sécurité</span>
+            </div>
+            <div class="treatment-item">
+                <span class="treatment-label">Base légale :</span>
+                <span class="treatment-value">Intérêt légitime du responsable du traitement</span>
+            </div>
+            <div class="treatment-item">
+                <span class="treatment-label">Durée de conservation :</span>
+                <span class="treatment-value">12 mois maximum</span>
+            </div>
+            <div class="treatment-item">
+                <span class="treatment-label">Destinataires :</span>
+                <span class="treatment-value">Équipe technique habilitée</span>
+            </div>
+            <div class="treatment-item">
+                <span class="treatment-label">Transferts hors UE :</span>
+                <span class="treatment-value">Aucun</span>
+            </div>
+            <div class="treatment-item">
+                <span class="treatment-label">Mesures de sécurité :</span>
+                <span class="treatment-value">Surveillance, alertes, accès restreint</span>
+            </div>
+        </div>
+
+        <div class="treatment-card">
+            <h4>Traitement n°5 — Support et relation utilisateur</h4>
+            <div class="treatment-item">
+                <span class="treatment-label">Finalité :</span>
+                <span class="treatment-value">Gestion des demandes, réclamations et exercice des droits RGPD</span>
+            </div>
+            <div class="treatment-item">
+                <span class="treatment-label">Personnes concernées :</span>
+                <span class="treatment-value">Utilisateurs et prospects</span>
+            </div>
+            <div class="treatment-item">
+                <span class="treatment-label">Catégories de données :</span>
+                <span class="treatment-value">Adresse e-mail, contenu des échanges, données nécessaires au traitement de la demande</span>
+            </div>
+            <div class="treatment-item">
+                <span class="treatment-label">Base légale :</span>
+                <span class="treatment-value">Obligation légale et intérêt légitime</span>
+            </div>
+            <div class="treatment-item">
+                <span class="treatment-label">Durée de conservation :</span>
+                <span class="treatment-value">3 ans maximum après clôture de la demande</span>
+            </div>
+            <div class="treatment-item">
+                <span class="treatment-label">Destinataires :</span>
+                <span class="treatment-value">Équipe support</span>
+            </div>
+            <div class="treatment-item">
+                <span class="treatment-label">Transferts hors UE :</span>
+                <span class="treatment-value">Aucun</span>
+            </div>
+            <div class="treatment-item">
+                <span class="treatment-label">Mesures de sécurité :</span>
+                <span class="treatment-value">Accès restreint, traçabilité des demandes</span>
+            </div>
+        </div>
+
+        <h2>4. Sous-traitants principaux</h2>
+        <ul>
+            <li><strong>OVHcloud</strong> – Hébergement des données (Union européenne)</li>
+            <li>Prestataires techniques strictement nécessaires au fonctionnement du service</li>
+        </ul>
+        <p>Tous les sous-traitants sont liés par des <strong>accords conformes à l'article 28 RGPD</strong>.</p>
+
+        <h2>5. Analyse des risques</h2>
+        <p>Compte tenu :</p>
+        <ul>
+            <li>de la nature sensible des données,</li>
+            <li>du public concerné,</li>
+            <li>des finalités du service,</li>
+        </ul>
+        <p>le niveau de risque est évalué comme <strong>élevé</strong>, justifiant :</p>
+        <ul>
+            <li>des mesures de sécurité renforcées,</li>
+            <li>un suivi régulier,</li>
+            <li>la préparation d'un <strong>DPIA</strong> (analyse d'impact).</li>
+        </ul>
+
+        <h2>6. Mise à jour du registre</h2>
+        <p>Le présent registre est :</p>
+        <ul>
+            <li>tenu à jour régulièrement,</li>
+            <li>révisé à chaque évolution majeure du service,</li>
+            <li>conservé sous forme écrite (électronique).</li>
+        </ul>
+
+        <a href="index.html" class="back-link">&larr; Retour à l'accueil</a>
+    </div>
+</body>
+</html>

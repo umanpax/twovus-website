@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - 2oVus</title>
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --gradient-start: #C41E5C;
+            --gradient-end: #5DABA8;
+            --bg-dark: #121620;
+            --surface-dark: #1A1F2E;
+            --text-light: #FFFBFE;
+            --text-muted: rgba(255, 251, 254, 0.7);
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            line-height: 1.8;
+        }
+        header {
+            padding: 20px 24px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+        header a {
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0;
+        }
+        header img { width: 96px; height: 96px; border-radius: 12px; }
+        .logo-text {
+            height: 125px;
+            width: auto;
+            margin-left: -55px;
+        }
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px 24px;
+        }
+        h1 {
+            font-size: 36px;
+            font-weight: 800;
+            margin-bottom: 8px;
+        }
+        .subtitle { color: var(--text-muted); margin-bottom: 40px; font-size: 16px; }
+        .faq-item {
+            background: var(--surface-dark);
+            border-radius: 16px;
+            margin-bottom: 16px;
+            border: 1px solid rgba(255,255,255,0.05);
+            overflow: hidden;
+        }
+        .faq-question {
+            padding: 20px 24px;
+            font-weight: 700;
+            font-size: 16px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: color 0.2s;
+        }
+        .faq-question:hover { color: var(--gradient-start); }
+        .faq-question::after {
+            content: '+';
+            font-size: 24px;
+            font-weight: 300;
+            color: var(--gradient-start);
+            transition: transform 0.3s;
+        }
+        .faq-item.open .faq-question::after {
+            transform: rotate(45deg);
+        }
+        .faq-answer {
+            padding: 0 24px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+        }
+        .faq-item.open .faq-answer {
+            padding: 0 24px 20px;
+            max-height: 300px;
+        }
+        .faq-answer p {
+            color: var(--text-muted);
+            font-size: 15px;
+        }
+        .category-title {
+            font-size: 18px;
+            font-weight: 700;
+            margin-top: 40px;
+            margin-bottom: 16px;
+            color: var(--gradient-start);
+        }
+        .back-link { display: inline-block; margin-top: 40px; color: var(--gradient-start); text-decoration: none; font-weight: 600; }
+        .back-link:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="assets/logo.png" alt="2oVus">
+            <img src="assets/2oVus.svg" alt="2oVus" class="logo-text">
+        </a>
+    </header>
+    <div class="content">
+        <h1>Questions Fréquentes</h1>
+        <p class="subtitle">Retrouvez les réponses aux questions les plus courantes sur 2oVus.</p>
+
+        <div class="category-title">Compte et inscription</div>
+
+        <div class="faq-item">
+            <div class="faq-question">Comment créer un compte ?</div>
+            <div class="faq-answer">
+                <p>Téléchargez l'application depuis le Google Play Store ou l'App Store, puis suivez les étapes d'inscription. Vous aurez besoin d'un numéro de téléphone ou d'une adresse email valide.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">L'application est-elle gratuite ?</div>
+            <div class="faq-answer">
+                <p>Oui, 2oVus est entièrement gratuite au téléchargement et à l'utilisation. Toutes les fonctionnalités sont accessibles sans abonnement.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Comment supprimer mon compte ?</div>
+            <div class="faq-answer">
+                <p>Rendez-vous dans l'onglet Profil, puis appuyez sur "Supprimer mon compte". Cette action est irréversible et supprimera toutes vos données.</p>
+            </div>
+        </div>
+
+        <div class="category-title">Connexion avec un partenaire</div>
+
+        <div class="faq-item">
+            <div class="faq-question">Comment inviter mon/ma partenaire ?</div>
+            <div class="faq-answer">
+                <p>Dans l'onglet "Inviter", ajoutez votre partenaire depuis vos contacts ou manuellement. Appuyez sur "Inviter" pour générer un code unique que vous pourrez lui envoyer par SMS.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Comment saisir un code d'invitation ?</div>
+            <div class="faq-answer">
+                <p>Sur l'écran principal (onglet Explore), vous trouverez un champ de saisie en haut de l'écran. Entrez le code reçu de votre partenaire et validez pour vous connecter.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Peut-on être connecté à plusieurs personnes ?</div>
+            <div class="faq-answer">
+                <p>Vous pouvez avoir plusieurs connexions actives. Chaque connexion est indépendante et les matches sont propres à chaque couple.</p>
+            </div>
+        </div>
+
+        <div class="category-title">Fonctionnement des matches</div>
+
+        <div class="faq-item">
+            <div class="faq-question">Comment fonctionne le système de swipe ?</div>
+            <div class="faq-answer">
+                <p>Des cartes d'envies vous sont présentées. Swipez vers la droite (ou appuyez sur le cœur) si l'envie vous plaît, vers la gauche (ou appuyez sur la croix) si elle ne vous intéresse pas. Vos choix restent confidentiels.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Qu'est-ce qu'un match ?</div>
+            <div class="faq-answer">
+                <p>Un match se produit quand vous et votre partenaire avez tous les deux swipe vers la droite sur la même envie. C'est le signe que cette envie est partagée !</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Mon partenaire peut-il voir ce que j'ai refusé ?</div>
+            <div class="faq-answer">
+                <p>Non, jamais. Vos swipes vers la gauche (refus) sont totalement invisibles pour votre partenaire. Seuls les matches mutuels sont révélés.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">À quoi correspondent les niveaux d'intensité ?</div>
+            <div class="faq-answer">
+                <p>Les envies sont classées en plusieurs niveaux : Ange (doux), Feu (modéré), Piment (intense) et Démon (très intense). Vous pouvez filtrer par niveau selon vos préférences.</p>
+            </div>
+        </div>
+
+        <div class="category-title">Confidentialité</div>
+
+        <div class="faq-item">
+            <div class="faq-question">Mes données sont-elles sécurisées ?</div>
+            <div class="faq-answer">
+                <p>Oui, nous prenons la sécurité de vos données très au sérieux. Les communications sont chiffrées et vos données personnelles ne sont jamais partagées avec des tiers.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Qui peut voir mon profil ?</div>
+            <div class="faq-answer">
+                <p>Seuls les partenaires avec lesquels vous êtes connecté(e) peuvent voir votre nom. Votre profil n'est pas visible publiquement.</p>
+            </div>
+        </div>
+
+        <a href="index.html" class="back-link">&larr; Retour à l'accueil</a>
+    </div>
+
+    <script>
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentElement;
+                const wasOpen = item.classList.contains('open');
+                document.querySelectorAll('.faq-item.open').forEach(el => el.classList.remove('open'));
+                if (!wasOpen) item.classList.add('open');
+            });
+        });
+    </script>
+
+    <!-- Mixpanel Analytics -->
+    <script src="assets/analytics.js"></script>
+</body>
+</html>
